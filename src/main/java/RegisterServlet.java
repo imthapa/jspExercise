@@ -26,7 +26,7 @@ public class RegisterServlet extends HttpServlet {
         PrintWriter out = resp.getWriter();
         resp.setContentType("text/html");
 
-        System.out.println(req.getAttribute("error"));
+     //   System.out.println(req.getAttribute("error"));
 
         if (name == "" || userName == "" || password == "") {
             req.setAttribute("error", "All fields are required!!");
@@ -60,7 +60,8 @@ public class RegisterServlet extends HttpServlet {
 
         }
 
+
         req.setAttribute("success", "You have been successfully registered. Please Login!");
-        req.getRequestDispatcher("/WEB-INF/login.jsp").forward(req, resp);
+        req.getRequestDispatcher("/WEB-INF/home.jsp").forward(req, resp);
     }
 }
