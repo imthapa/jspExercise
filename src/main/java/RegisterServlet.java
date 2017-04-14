@@ -59,5 +59,8 @@ public class RegisterServlet extends HttpServlet {
             e.printStackTrace();
 
         }
+
+        req.setAttribute("success", "You have been successfully registered. Please Login!");
+        req.getRequestDispatcher("/WEB-INF/login.jsp").forward(req, resp);
     }
 }
