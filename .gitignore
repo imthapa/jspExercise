@@ -1,0 +1,27 @@
+.gradle/
+src/main/resources/config/application-dev.yml
+build/
+out/
+/classes/
+.classpath
+.project
+test/data
+*.iws
+.settings
+stacktrace.log
+/*.zip
+/plugin.xml
+/*.log
+/target/
+/out/
+/target-eclipse/
+c.tld
+fmt.tld
+
+# IntelliJ IDEA files below
+*.iml
+*.ipr
+.idea/
+.sass-cache/
+/bin/
+.asscache
